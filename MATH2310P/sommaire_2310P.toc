@@ -1,2 +1,4 @@
 \babel@toc {french}{}\relax 
-\contentsline {part}{Introduction}{2}{section*.1}%
+\contentsline {part}{I\hspace {1em}Équations différentielles ordinaires}{3}{part.1}%
+\contentsline {section}{\numberline {1}Cours 21 févr : Généralités}{3}{section.1.1}%
+\contentsline {part}{II\hspace {1em}Courbes et Surfaces}{6}{part.2}%
