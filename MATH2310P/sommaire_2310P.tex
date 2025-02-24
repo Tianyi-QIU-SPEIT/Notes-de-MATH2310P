@@ -175,12 +175,116 @@ On peut prendre n'importe quelle primitive car la différence entre deux primiti
 
 \paragraph{Preuve}: \space
 
-Posons deux ensembles:
+Posons deux ensembles: $S_{1} = \{ X | X'(t) + a(t)X'(t) = 0\}$ et $ S_{2} = \{ X : t \mapsto \lambda e^{-A(t)} | \lambda \in \mathbb{R}\}$, où $X$ est une fonction. Montrons que les deux ensembles sont égaux par double inclusion.
+
+
+\begin{itemize}
+ \item ($S_{1} \supset S_{2}$)
+ 
+ Soit $\lambda$ un réel, on pose la fonction $X: t \mapsto \lambda e^{-A(t)}$, donc elle est un élément de $S_{2}$. $X$ est composée des fonctions dérivables, et d'après les théorèmes généraux elle est aussi dérivable.
+ 
+ On a: $X'(t) = \lambda (-A'(t))e^{-A(t)} = - \lambda a(t) e^{-A(t)}$.
+ 
+ Donc: $X'(t) + a(t)X(t) = - \lambda a(t) e^{-A(t)} + \lambda a(t) e^{-A(t)} = 0$, c'est-à-dire que $X \in S_{1}$, et que $S_{1} \supset S_{2}$.
+
+ \item ($S_{2} \supset S_{1}$)
+ 
+ Soit $X \in S_{1}$. Montrons que $X \in S_{2}$.
+ 
+ On cherche une constante réelle $\lambda$, telle que $X(t) = \lambda e^{-A(t)}$.
+ 
+ Posons la fonction $f$ qui à $t$ associe $\frac{X(t)}{e^{-A(t)}}$, c'est-à-dire $f(t) = \frac{X(t)}{e^{-A(t)}} = X(t)e^{A(t)}$. On suppose que la fonction $X$ est 1-fois dérivable car elle est solution d'un équation différentielle, et donc notre $f$ est aussi dérivable comme composée des fonctions dérivables.
+ 
+ On a: $f'(t) = (X'(t) + X(t)a(t))e^{A(t)} = 0$ car $X \in S_{1}$. Donc $f$ est constante, on note $\lambda$ sa valeur.
+ 
+ De plus, $X(t)e^{A(t)} = \lambda, X(t) = \lambda e^{-A(t)} \in S_{2}$. On trouve que $S_{2} \supset S_{1}$.
+
+\end{itemize}
+
+Par double inclusion on trouve le résultat énoncé.
+
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Rappel 1.2]
+
+\textbf{Équations différentielles linéaires non-homogènes d'ordre 1}
+
+Une équation de la forme:
+
+\[
+(E_{2}) : X'(t) + a(t)X(t) = b(t)
+\] 
+
+Où $a$ et $b$ sont des fonctions fixées et continues.
+
+
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Théorème 1.2]
+
+Toutes les solutions de $(E_{2})$ sont de la forme: $X = X_{p} + X_{h}$, où $X_{p}$ est une solution particulière, et $X_{h}$ est une solution de l'équation homogène associée à $(E_{2})$.
+
+\tcblower
+
+On appelle ce résultat \textbf{le principe de superposition}.
+
+\end{tcolorbox}
+
+\paragraph{Preuve}: \space
 
 
 
 
 
+\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!75!black,title=Exemple 1.5]
+
+Résoudre l'équation différentielle: $f(t) - tf'(t) = 1$ pour $t \in ]- \infty, 0[ $ ou $ ]0, +\infty[$.
+
+\tcblower
+
+Faites attention: $\mathbb{R}^{*} $ n'est pas un intervalle.
+
+\end{tcolorbox}
+
+\paragraph{Solution}: \space
+
+D'après le théorème 1.2 on sait qu'on doit chercher deux solutions: une particulière et une homogène. On va d'abord manipuler l'équation pour qu'elle soit de la forme générale.
+
+\[
+f'(t) - \frac{1}{t} f(t) = - \frac{1}{t}
+\]
+
+\begin{itemize}
+ \item \textbf{Solution homogène}
+ 
+ Cherchons une solution de l'équation homogène associée: $f'(t) - \frac{1}{t} f(t) = 0$.
+ 
+ D'après le théorème 1.1, $f$ est de la forme: $f : t \mapsto \lambda e^{ln|t|} = \lambda |t|$, avec $\lambda$ une constante quelconque. Ici on trouve le logarithme népérien comme primitive de $\frac{1}{t}$.
+ 
+
+ \item \textbf{Solution particulière}
+ 
+ On remarque que la fonction constante et égale à 1 est une solution particulière.
+
+\end{itemize}
+
+D'après le théorème 1.2, toutes les solutions sont de la forme: $f : t \mapsto f_{p}(t) + f_{h}(t) = 1 + \lambda |t|$, avec $\lambda$ une constante réelle.
+
+
+
+
+\begin{tcolorbox}[colback=gray!5!white,colframe=gray!75!black,title=Rappel 1.3]
+
+\textbf{ÉDLs homogènes d'ordre 2 à coefficients constantes}
+
+Une équation de la forme:
+
+\[
+(E_{3}) : X''(t) + aX'(t) + bX(t)= 0
+\] 
+
+Où $a$ et $b$ sont des constantes.
+
+\end{tcolorbox}
 
 
 

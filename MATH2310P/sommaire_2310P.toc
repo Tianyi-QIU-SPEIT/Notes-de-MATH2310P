@@ -2,4 +2,6 @@
 \contentsline {part}{I\hspace {1em}Équations différentielles ordinaires}{3}{part.1}%
 \contentsline {section}{\numberline {1}Cours 21 févr : Généralités}{3}{section.1.1}%
 \contentsline {paragraph}{Preuve}{5}{section*.2}%
-\contentsline {part}{II\hspace {1em}Courbes et Surfaces}{6}{part.2}%
+\contentsline {paragraph}{Preuve}{6}{section*.3}%
+\contentsline {paragraph}{Solution}{6}{section*.4}%
+\contentsline {part}{II\hspace {1em}Courbes et Surfaces}{8}{part.2}%
