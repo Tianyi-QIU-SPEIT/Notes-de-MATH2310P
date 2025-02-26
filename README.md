@@ -1,2 +1,2 @@
-# Recap-de-MATH2310P
-Récapitulatif du cours MATH2310P, Mathématiques pour EA
+# Notes-de-MATH2310P
+Notes du cours MATH2310P, Mathématiques pour EA
